@@ -18,12 +18,19 @@
 			</div>
 		</header>
 
-		<div id="editor">
+		<div id="editor" class="d-flex flex-row justify-content-between">
 			<div class="input bg-dark text-light rounded">
 				<div class="form-group d-flex flex-column">
-					<label for="code-editor" class="bg-danger rounded">Editor</label>
+					<label for="code-editor" class="bg-danger text-center rounded"
+						>Editor</label
+					>
 					<textarea class="form-control" id="code-editor"></textarea>
 				</div>
+			</div>
+
+			<div class="output d-flex flex-column bg-dark rounded-3">
+				<span class="bg-danger text-light text-center rounded">output</span>
+				<div id="live-preview" class="bg-light rounded-3"></div>
 			</div>
 		</div>
 	</body>

@@ -11,15 +11,16 @@ header {
 }
 
 /* EDITOR */
-#editor {
+/* #editor {
 	display: flex;
 	flex-direction: row;
-	justify-content: space-between;
-}
+	justify-content: space-between; */
+/* } */
 
 #editor .output,
 #editor .input {
 	padding: 10px;
+	margin: 10px;
 	width: 50%;
 	height: 100%;
 }
@@ -27,9 +28,14 @@ header {
 #editor .input .form-group label {
 	margin-bottom: 10px;
 	padding: 10px;
-	text-align: center;
 }
 
-#editor .input .form-group textarea {
-	height: 250px;
+#editor .input .form-group textarea,
+#editor .output div#live-preview {
+	height: 500px;
+}
+
+#editor .output span {
+	margin-bottom: 10px;
+	padding: 10px;
 }
