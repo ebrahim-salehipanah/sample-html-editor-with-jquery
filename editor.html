@@ -10,12 +10,21 @@
 		<script src="/js/app.js"></script>
 		<title>Editor</title>
 	</head>
-	<body>
-		<div
-			class="header container bg-dark text-light rounded col-12 d-flex flex-column"
-		>
-			<h1>HTML Editor</h1>
-			<h4>samlpe editor with jqurey and bootstrap</h4>
+	<body class="bg-secondary">
+		<header class="bg-dark text-light rounded-3">
+			<div class="container d-flex flex-column">
+				<h1>HTML Editor</h1>
+				<h4>samlpe editor with jqurey and bootstrap</h4>
+			</div>
+		</header>
+
+		<div id="editor">
+			<div class="input bg-dark text-light rounded">
+				<div class="form-group d-flex flex-column">
+					<label for="code-editor" class="bg-danger rounded">Editor</label>
+					<textarea class="form-control" id="code-editor"></textarea>
+				</div>
+			</div>
 		</div>
 	</body>
 </html>
