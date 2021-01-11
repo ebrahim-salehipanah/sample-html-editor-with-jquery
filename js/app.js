@@ -1,6 +1,6 @@
 $(document).ready(() => {
-	var code = $("#code-editor").val();
-	$("#code-editor").focus(function () {
+	$("#code-editor").keyup(function () {
+		var code = $(this).val();
 		$("#live-preview").html(code);
 	});
 });
